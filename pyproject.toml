@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "ltl"
+version = "0.1.0"
+description = "Learning to learn"
+authors = ["Jeff Shen <shenjeff@princeton.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
