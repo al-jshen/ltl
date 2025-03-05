@@ -24,7 +24,7 @@ class CategoricalPolicy(nn.Module):
         action_dist = self.distribution(logits=log_probs)
         action = action_dist.sample()
         log_prob = action_dist.log_prob(action)
-        return action.item(), log_prob
+        return action.detach().cpu().numpy(), log_prob
 
 
 
